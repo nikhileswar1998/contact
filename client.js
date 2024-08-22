@@ -1,5 +1,3 @@
-// const { Client } = require('whatsapp-web.js');
-// const client = new Client();
 const { Client, LocalAuth } = require('whatsapp-web.js');
 
 const client = new Client({
@@ -50,7 +48,6 @@ client.on('ready', () => {
         // break
     }
     console.log('\n\n All messages successfully sent!!!!!')
-    // client.sendMessage('15129545778@c.us', "test")
 });
 
 client.on('message', (message) => {
